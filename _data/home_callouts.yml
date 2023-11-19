@@ -1,0 +1,12 @@
+style: is-light
+items:
+  - title: Simple gui
+    subtitle: Gradio based simple gui to train your model
+    icon: fa-desktop 
+  - title: Ai based training optimizer
+    subtitle: Ai based training optimizer to train your model
+    icon: fa-cog
+  - title: Open source
+    subtitle: Open source and free to use
+    icon: fa-github
+    icon_brand: true
