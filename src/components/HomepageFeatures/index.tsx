@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import React, { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -11,38 +11,59 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Predacons Library',
+    Svg: require('@site/static/img/image.svg').default, // Replace with Predacons-specific SVG
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A Python library based on transformers for transfer learning. Offers tools for data processing, model training, and text generation, simplifying the application of advanced ML techniques.
+        <br />
+        Key features: Data Loading, Text Cleaning, Model Training, Text Generation, Text & Chat Streaming, Embeddings. Compatible with Langchain.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Predacons CLI',
+    Svg: require('@site/static/img/image (3).svg').default, // Replace with Predacons CLI-specific SVG
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A command-line interface for interacting with the Predacons library.  Provides a way to load models, generate responses, and manage configurations from the terminal.
+        <br />
+        Features: Model Management, Interactive Chat (including with vector stores), Web Scraper, Configuration Management.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Predacons GUI',
+    Svg: require('@site/static/img/image (4).svg').default, // Replace with Predacons GUI-specific SVG
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        A Gradio-based frontend for Predacons. Provides a visual interface for loading, saving, training, and testing models (Hugging Face and custom).
+      </>
+    ),
+  },
+  {
+    title: 'Predacons Server', 
+    Svg: require('@site/static/img/image (5).svg').default, // Replace with Predacons Server-specific SVG
+    description: (
+      <>
+        An OpenAI API-compatible server built on Predacons to host any Torch and Hugging Face LLM model.
+        <br />
+        Features: Model Hosting, API Key Authentication, Scalable Architecture, Easy Integration via REST API.
+      </>
+    ),
+  },
+  {
+    title: 'Predacons Agent',
+    Svg: require('@site/static/img/image (1).svg').default, // Replace with Predacons Agent-specific SVG
+    description: (
+      <>
+        An agentic AI library based on Predacons for data analysis using Python notebook agents, web scraping, vector databases, and decision-making.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

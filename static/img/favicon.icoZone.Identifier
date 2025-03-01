@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/4a4098a4-7f44-4b0d-8c39-284768e09491/docusaurus.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250301%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250301T184633Z&X-Amz-Expires=86400&X-Amz-Signature=cae808f48da0897fab2999bb86322b42b3feef5eaf69a1dea4f2fcffadd82af0&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22docusaurus.ico%22&response-content-type=image%2Fvnd.microsoft.icon&x-id=GetObject
