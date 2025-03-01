@@ -28,11 +28,10 @@ Predacons offers a comprehensive suite of functionalities, including:
 To get started with Predacons, simply install it using pip:
 
 ```
----
-bash
+
 pip install predacons
 
----
+
 ```
 
 ## Quick Start
@@ -40,8 +39,7 @@ pip install predacons
 Here's a basic example to demonstrate how to use Predacons for text generation:
 
 ```
----
-python
+
 from predacons import predacons
 
 # Initialize Predacons (prints available functions)
@@ -60,32 +58,31 @@ chat_sequence = [{"role": "user", "content": "Tell me a joke."}]
 generated_chat = predacons.chat_generate(model_path=model_path, sequence=chat_sequence, max_length=100)
 print(f"Generated chat: {generated_chat}")
 
----
+
 ```
 
 ## Documentation
 
 For detailed information on specific functions and modules, please refer to the following documentation pages:
 
-*   [Predacons Core (`predacons.py`)](./predacons.md) : Main module containing core functions for data loading, training, and generation.
 *   [Data Loading (`load_data.py`)](./load_data.md): Functions for reading and cleaning text data from various sources.
-*   [Model Training (`train_predacons.py`)](./train_predacons.md): Tools for training Predacons models, including trainer configuration.
+*   [Model Training (`train_predacons.py`)](./train.md): Tools for training Predacons models, including trainer configuration.
 *   [Text Generation (`generate.py`)](./generate.md): Functions for generating text using trained models.
 *   [Data Preparation (`data_preparation.py`)](./data_preparation.md): Utilities for creating and augmenting datasets.
 *   [Speculative Fast Generation (`speculative_fast_generation.py`)](./speculative_fast_generation.md): Implementation of fast text generation using speculative decoding.
 
 ## Contributing
 
-We welcome contributions to Predacons! If you have any ideas, suggestions, or bug reports, please open an issue on the [GitHub repository](link-to-repo).  If you'd like to contribute code, please submit a pull request.
+We welcome contributions to Predacons! If you have any ideas, suggestions, or bug reports, please open an issue on the [GitHub repository](https://github.com/Predacons/predacons). If you'd like to contribute code, please submit a pull request.
 
 ## License
 
 This project is licensed under multiple licenses:
 
-- For **free users**, the project is licensed under the terms of the GNU Affero General Public License (AGPL). See  [`LICENSE-AGPL`](LICENSE-AGPL) for more details.
+- For **free users**, the project is licensed under the terms of the GNU Affero General Public License (AGPL). See  [`LICENSE-AGPL`](https://github.com/Predacons/predacons/blob/main/LICENSE-AGPL) for more details.
 
 - For **paid users**, there are two options:
-    - A perpetual commercial license. See [`LICENSE-COMMERCIAL-PERPETUAL`](LICENSE-COMMERCIAL-PERPETUAL) for more details.
-    - A yearly commercial license. See [`LICENSE-COMMERCIAL-YEARLY`](LICENSE-COMMERCIAL-YEARLY) for more details.
+    - A perpetual commercial license. See [`LICENSE-COMMERCIAL-PERPETUAL`](https://github.com/Predacons/predacons/blob/main/LICENSE-COMMERCIAL-PERPETUAL) for more details.
+    - A yearly commercial license. See [`LICENSE-COMMERCIAL-YEARLY`](https://github.com/Predacons/predacons/blob/main/LICENSE-COMMERCIAL-YEARLY) for more details.
 
 Please ensure you understand and comply with the license that applies to you.
