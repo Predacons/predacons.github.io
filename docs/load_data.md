@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Load Data
 
 This module provides functionalities for loading data from various sources, including directories, multiple files, and CSV files. It also includes a utility for cleaning text data. These functions are built upon the `LoadData` class within the `predacons` library.

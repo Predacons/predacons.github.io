@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Data Preparation
 
 This module provides functionalities for preparing data for training language models. It includes methods for generating text data sources using both OpenAI's GPT models and local/Hugging Face language models.

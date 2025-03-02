@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 # Speculative Fast Generation
 
 This module provides functionalities for accelerating text generation using speculative decoding. It leverages a draft model to predict potential tokens, which are then verified by the main model, significantly reducing the computational cost of generation.

@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Train Predacons
 
 This module provides functionalities for training Predacons models. It includes methods for both legacy and standard training approaches, allowing flexibility in how you train your models.

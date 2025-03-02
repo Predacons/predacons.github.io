@@ -1,4 +1,6 @@
-
+---
+sidebar_position: 1
+---
 # Predacons
 
 Predacons is a Python library built on top of the Hugging Face Transformers library, designed to simplify and enhance various Natural Language Processing (NLP) tasks. It provides a user-friendly interface for data loading, model training, and text generation, enabling you to leverage the power of transfer learning with ease.

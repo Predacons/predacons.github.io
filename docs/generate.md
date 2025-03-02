@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Generate
 
 This module provides functionalities for generating text, chat outputs, and handling streaming using trained models. It leverages the `Generate` class for default generation methods and `GPTFast` for fast generation using speculative decoding.
