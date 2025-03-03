@@ -7,7 +7,7 @@ This module provides functionalities for generating text, chat outputs, and hand
 
 ## generate_text
 
-```
+```python
 
 def generate_text(model_path, sequence, max_length,trust_remote_code = False,use_fast_generation=False, draft_model_name=None,gguf_file=None):
 
@@ -32,7 +32,7 @@ Generates text using the specified model. This method is being deprecated, and `
 
 **Example:**
 
-```
+```python
 
 generated_text = predacons.generate_text(model_path="path/to/your/model",
                                          sequence="Seed text for generation",
@@ -45,7 +45,7 @@ generated_text = predacons.generate_text(model_path="path/to/your/model",
 
 ## generate_output
 
-```
+```python
 
 def generate_output(model_path, sequence, max_length,trust_remote_code = False,use_fast_generation=False, draft_model_name=None,temperature=0.1,apply_chat_template = False,gguf_file=None,auto_quantize=None):
 
@@ -73,7 +73,7 @@ Generates output using the specified model. This method is being deprecated, and
 
 **Example:**
 
-```
+```python
 
 generated_output = predacons.generate_output(model_path="path/to/your/model",
                                          sequence="Seed text for generation",
@@ -86,7 +86,7 @@ generated_output = predacons.generate_output(model_path="path/to/your/model",
 
 ## generate
 
-```
+```python
 
 def generate(*args, **kwargs):
 
@@ -127,7 +127,7 @@ Generates output based on the provided arguments, offering flexibility for diffe
 
 **Example (using model path):**
 
-```
+```python
 
 generated_text = predacons.generate(model_path="path/to/your/model",
                                          sequence="Seed text for generation",
@@ -138,7 +138,7 @@ generated_text = predacons.generate(model_path="path/to/your/model",
 
 **Example (using preloaded model and tokenizer):**
 
-```
+```python
 
 model = AutoModelForCausalLM.from_pretrained("path/to/your/model")
 tokenizer = AutoTokenizer.from_pretrained("path/to/your/model")
@@ -154,7 +154,7 @@ generated_text = predacons.generate(model=model,
 
 ## text_generate
 
-```
+```python
 
 def text_generate(*args, **kwargs):
 
@@ -192,7 +192,7 @@ Generates text and prints the output to the console.
 
 **Example:**
 
-```
+```python
 
 generated_text = predacons.text_generate(model_path="path/to/your/model",
                                          sequence="Seed text for generation",
@@ -206,7 +206,7 @@ print(generated_text)
 
 ## text_stream
 
-```
+```python
 
 def text_stream(*args, **kwargs):
 
@@ -242,7 +242,7 @@ Streams text and prints the output to the console.
 
 **Example:**
 
-```
+```python
 
 for text in predacons.text_stream(model_path="path/to/your/model",
                                   sequence="Seed text for generation",
@@ -256,7 +256,7 @@ for text in predacons.text_stream(model_path="path/to/your/model",
 
 ## chat_generate
 
-```
+```python
 
 def chat_generate(*args, **kwargs):
 
@@ -293,7 +293,7 @@ Generates chat output using the specified model and prints the output to the con
 
 **Example:**
 
-```
+```python
 
 chat = [
     {"role": "user", "content": "Hey, what is a car?"}
@@ -311,7 +311,7 @@ chat_output = predacons.chat_generate(model = model,
 
 ## chat_stream
 
-```
+```python
 
 def chat_stream(*args, **kwargs):
 
@@ -347,7 +347,7 @@ Streams chat output using the specified model and prints the output to the conso
 
 **Example:**
 
-```
+```python
 
 chat = [
     {"role": "user", "content": "Hey, what is a car?"}
@@ -366,7 +366,7 @@ for chat in predacons.chat_stream(model = model,
 
 ## load_model
 
-```
+```python
 
 def load_model(model_path,trust_remote_code=False,use_fast_generation=False, draft_model_name=None,gguf_file=None,auto_quantize=None):
 
@@ -394,7 +394,7 @@ Loads a model from the specified `model_path`.
 
 ## load_tokenizer
 
-```
+```python
 
 def load_tokenizer(tokenizer_path,gguf_file=None):
 

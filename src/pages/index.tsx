@@ -20,8 +20,18 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
+            to="https://github.com/predacons">
+            Github
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
             to="/docs/intro">
             Documentation
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://huggingface.co/Predacon">
+            Huggingface
           </Link>
         </div>
       </div>

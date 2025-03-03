@@ -6,7 +6,7 @@ sidebar_position: 4
 This module provides functionalities for training Predacons models. It includes methods for both legacy and standard training approaches, allowing flexibility in how you train your models.
 
 ## train
-```
+```python
 
 def train(*args, **kwargs):
 
@@ -43,7 +43,7 @@ Trains the Predacons model. This function uses a more modern training setup than
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 from transformers import TrainingArguments
@@ -67,7 +67,7 @@ predacons.train(
 ```
 
 ## trainer
-```
+```python
 
 def trainer(*args, **kwargs):
 
@@ -109,7 +109,7 @@ This function serves as a wrapper that calls the `trainer` method of the `TrainP
 
 **Example Usage:**
 
-```
+```python
 
 trainer = predacons.trainer(
     model_name='bert-base-uncased',
@@ -126,7 +126,7 @@ trainer = predacons.trainer(
 
 
 ## train_legacy
-```
+```python
 
 def train_legacy(train_file_path, model_name,
                  output_dir,
@@ -155,7 +155,7 @@ Trains the Predacons model using the legacy training method.
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 
@@ -174,7 +174,7 @@ predacons.train_legacy(
 ```
 
 ## trainer_legacy
-```
+```python
 
 def trainer_legacy(train_file_path, model_name,
                    output_dir,
@@ -206,7 +206,7 @@ This function returns a trainer object using the legacy training setup. This all
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 

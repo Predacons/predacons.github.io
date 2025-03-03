@@ -10,7 +10,7 @@ This module provides functionalities for accelerating text generation using spec
 The `GPTFast` class encapsulates methods for fast text generation.
 
 ### generate_text_fast
-```
+```python
 
 def generate_text_fast(model_path, draft_model_name, sequence, max_length,trust_remote_code = False,gguf_file=None):
 
@@ -33,7 +33,7 @@ Generates text quickly using speculative decoding. This method loads both a main
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 
@@ -50,7 +50,7 @@ print(generated_text)
 ```
 
 ### generate_output_fast
-```
+```python
 
 def generate_output_fast(model_path, draft_model_name, sequence, max_length,trust_remote_code = False,gguf_file=None):
 
@@ -74,7 +74,7 @@ Generates output sequences quickly using speculative decoding.  This method load
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 
@@ -91,7 +91,7 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
 ### generate_output_from_model
-```
+```python
 
 def generate_output_from_model(model, tokenizer, sequence, max_length):
 
@@ -113,7 +113,7 @@ Generates output from a pre-loaded `torch._dynamo.eval_frame.OptimizedModule` mo
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 import torch
@@ -134,7 +134,7 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
 ### load_model
-```
+```python
 
 def load_model(model_path, draft_model_name,trust_remote_code=False,gguf_file=None):
 
@@ -155,7 +155,7 @@ Loads both the main model and the draft model for fast generation.
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 
@@ -173,4 +173,3 @@ model = predacons.load_model(
 -   Speculative decoding requires both a main model and a smaller, faster "draft" model.  The draft model should ideally be significantly smaller to provide a speed advantage.
 -   `auto_quantize` is currently not supported with fast generation.
 -   `apply_chat_template` is not supported with fast generation yet.
-```

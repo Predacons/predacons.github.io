@@ -6,7 +6,7 @@ sidebar_position: 3
 This module provides functionalities for preparing data for training language models. It includes methods for generating text data sources using both OpenAI's GPT models and local/Hugging Face language models.
 
 ## generate_text_data_source_openai
-```
+```python
 
 def generate_text_data_source_openai(client, gpt_model, prompt, number_of_examples, temperature=0.5):
 
@@ -27,7 +27,7 @@ Generates a text data source using OpenAI's GPT model.
 
 **Example:**
 
-```
+```python
 
 import openai
 from predacons import predacons
@@ -48,7 +48,7 @@ print(text_data)
 ```
 
 ## generate_text_data_source_llm
-```
+```python
 
 def generate_text_data_source_llm(model_path, sequence, max_length, number_of_examples, trust_remote_code=False):
 
@@ -69,7 +69,7 @@ Generate a text data source for language model training using a local or Hugging
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 

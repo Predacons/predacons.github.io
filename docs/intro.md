@@ -29,7 +29,7 @@ Predacons offers a comprehensive suite of functionalities, including:
 
 To get started with Predacons, simply install it using pip:
 
-```
+```python
 
 pip install predacons
 
@@ -40,7 +40,7 @@ pip install predacons
 
 Here's a basic example to demonstrate how to use Predacons for text generation:
 
-```
+```python
 
 from predacons import predacons
 

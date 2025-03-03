@@ -22,27 +22,16 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Predacons CLI',
-    Svg: require('@site/static/img/image (3).svg').default, // Replace with Predacons CLI-specific SVG
+    title: 'Predacons Agent',
+    Svg: require('@site/static/img/image (3).svg').default, // Replace with Predacons Agent-specific SVG
     description: (
       <>
-        A command-line interface for interacting with the Predacons library.  Provides a way to load models, generate responses, and manage configurations from the terminal.
-        <br />
-        Features: Model Management, Interactive Chat (including with vector stores), Web Scraper, Configuration Management.
+        An agentic AI library based on Predacons for data analysis using Python notebook agents, web scraping, vector databases, and decision-making.
       </>
     ),
   },
   {
-    title: 'Predacons GUI',
-    Svg: require('@site/static/img/image (4).svg').default, // Replace with Predacons GUI-specific SVG
-    description: (
-      <>
-        A Gradio-based frontend for Predacons. Provides a visual interface for loading, saving, training, and testing models (Hugging Face and custom).
-      </>
-    ),
-  },
-  {
-    title: 'Predacons Server', 
+    title: 'Predacons Server',  
     Svg: require('@site/static/img/image (5).svg').default, // Replace with Predacons Server-specific SVG
     description: (
       <>
@@ -53,14 +42,26 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Predacons Agent',
-    Svg: require('@site/static/img/image (1).svg').default, // Replace with Predacons Agent-specific SVG
+    title: 'Predacons CLI',
+    Svg: require('@site/static/img/image (4).svg').default, // Replace with Predacons CLI-specific SVG
     description: (
       <>
-        An agentic AI library based on Predacons for data analysis using Python notebook agents, web scraping, vector databases, and decision-making.
+        A command-line interface for interacting with the Predacons library.  Provides a way to load models, generate responses, and manage configurations from the terminal.
+        <br />
+        Features: Model Management, Interactive Chat (including with vector stores), Web Scraper, Configuration Management.
       </>
     ),
   },
+  {
+    title: 'Predacons GUI',
+    Svg: require('@site/static/img/image (1).svg').default, // Replace with Predacons GUI-specific SVG
+    description: (
+      <>
+        A Gradio-based frontend for Predacons. Provides a visual interface for loading, saving, training, and testing models (Hugging Face and custom).
+      </>
+    ),
+  },
+  
 ];
 
 function Feature({ title, Svg, description }: FeatureItem) {

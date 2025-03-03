@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+predacons:
+  label: predacons
+  permalink: /predacons
+  description: Blog for predacons releases
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+predacons-gui:
+  label: predacons-gui
+  permalink: /predacons-gui
+  description: Blog for predacons-gui releases
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+predacons-cli:
+  label: predacons-cli
+  permalink: /predacons-cli
+  description: Blog for predacons-cli releases
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+predacons-agents:
+  label: predacons-agents
+  permalink: /predacons-agents
+  description: Blog for predacons-agents releases
+
+predacons-server:
+  label: predacons-server
+  permalink: /predacons-server
+  description: Blog for predacons-server releases

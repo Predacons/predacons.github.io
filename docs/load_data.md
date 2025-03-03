@@ -6,7 +6,7 @@ sidebar_position: 2
 This module provides functionalities for loading data from various sources, including directories, multiple files, and CSV files. It also includes a utility for cleaning text data. These functions are built upon the `LoadData` class within the `predacons` library.
 
 ## read_documents_from_directory
-```
+```python
 
 def read_documents_from_directory(directory, encoding="utf-8"):
 
@@ -25,7 +25,7 @@ Reads text documents from files within a specified directory.
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 
@@ -42,7 +42,7 @@ for doc in documents:
 - The method internally utilizes the `LoadData.read_documents_from_directory` method
 
 ## read_multiple_files
-```
+```python
 
 def read_multiple_files(file_paths):
 
@@ -60,7 +60,7 @@ Reads data from multiple files specified in a list of file paths.
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 
@@ -77,7 +77,7 @@ print(data)
 -   The function's ability to handle different file types (e.g., text, CSV, JSON) depends on the implementation within `LoadData.read_multiple_files`.
 
 ## clean_text
-```
+```python
 
 def clean_text(text):
 
@@ -95,7 +95,7 @@ Cleans the input text by removing unwanted characters or formatting.
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 
@@ -111,7 +111,7 @@ print(cleaned_text)
 -   This function is useful for pre-processing text data before training a model or performing text generation.
 
 ## read_csv
-```
+```python
 
 def read_csv(file_path, encoding="utf-8"):
 
@@ -130,7 +130,7 @@ Reads data from a CSV file and returns it as a pandas DataFrame.
 
 **Example:**
 
-```
+```python
 
 from predacons import predacons
 import pandas as pd  # Import pandas explicitly

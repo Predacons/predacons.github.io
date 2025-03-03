@@ -18,9 +18,8 @@ This tutorial demonstrates how to fine-tune a pre-trained language model using t
 
     First, import the necessary libraries:
 
-```
----
-python
+```python
+
     import os
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'  # Specify GPU device
 
@@ -33,56 +32,52 @@ python
     import predacons
     from datasets import load_dataset
     
----
+
 ```
 
 2.  **Load Dataset:**
 
     Load a dataset for fine-tuning. Here, we use `SkunkworksAI/reasoning-0.01` dataset
 
-```
----
-python
+```python
+
     ds = load_dataset("SkunkworksAI/reasoning-0.01")
     
----
+
 ```
 
 3.  **Define Model Path:**
 
     Specify the path to the pre-trained model you want to fine-tune.
 
-```
----
-python
+```python
+
     model_path = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
     
----
+
 ```
 
 4.  **Configure Training Parameters:**
 
     Set up the training parameters such as output directory, batch size, number of epochs, and save steps.
 
-```
----
-python
+```python
+
     output_dir = "pico_r1"
     overwrite_output_dir = False
     per_device_train_batch_size = 1
     num_train_epochs = 10
     save_steps = 50
     
----
+
 ```
 
 5.  **Initialize and Run Trainer:**
 
     Use the `predacons.trainer` function to initialize the trainer and start the fine-tuning process. This example uses 4-bit quantization and LoRA.
 
-```
----
-python
+```python
+
     trainer = predacons.trainer(
         use_legacy_trainer = False,
         train_dataset=ds,
@@ -100,7 +95,7 @@ python
 
     trainer.train()
     
----
+
 ```
 
     **Parameters Explanation:**

@@ -43,6 +43,8 @@ const config: Config = {
             'https://github.com/Predacons/predacons.github.io/tree/main/docs/',
         },
         blog: {
+          blogSidebarTitle: 'All releases',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -78,14 +80,19 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://huggingface.co/Predacon',
+          label: 'Huggingface',
+          position: 'right',
+        },
         {
           href: 'https://github.com/predacons',
           label: 'GitHub',
           position: 'right',
-        },
+        }
       ],
     },
     footer: {
@@ -95,7 +102,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Documentation',
               to: '/docs/intro',
             },
           ],
@@ -104,16 +111,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Huggingface',
+              href: 'https://huggingface.co/Predacon',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Github',
+              href: 'https://github.com/predacons',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/in/shourya-shashank/',
             },
           ],
         },
