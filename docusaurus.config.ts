@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Predacons/predacons.github.io/tree/main/docs/',
+            'https://github.com/Predacons/predacons.github.io/tree/main/',
         },
         blog: {
           blogSidebarTitle: 'All releases',
